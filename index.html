@@ -46,7 +46,9 @@
           <li><a class="header__menu__item" href="#about">About</a></li>
           <li><a class="header__menu__item" href="#skills">Skills</a></li>
           <li><a class="header__menu__item" href="#work">My work</a></li>
-          <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+          </li>
           <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -55,10 +57,22 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <img class="home__avatar" src="images/profile.png" alt="Yoon's profile" />
-        <h2 class="home__title">Hello <br> I&#39;m <strong class="home__title--strong">Dream Coder</strong>, Yoon</h2>
-        <p class="home_description">A front-End enginner currently residing in Seoul.</p>
-        <a class="home__contact" href="#contact">Contact Me</a>
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="images/profile.png"
+            alt="Yoon's profile"
+          />
+          <h2 class="home__title">
+            Hello <br />
+            I&#39;m <strong class="home__title--strong">Dream Coder</strong>,
+            Yoon
+          </h2>
+          <p class="home_description">
+            A front-End enginner currently residing in Seoul.
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
+        </div>
       </section>
       <!-- About -->
       <section id="about" class="section max-container">
@@ -107,61 +121,85 @@
       <section id="skills" class="section">
         <div class="max-container">
           <h2 class="title">My Skills</h2>
-        <p class="description">Skills & Attributes</p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
-          expedita eligendi dolores quam quis reprehenderit, ex modi. Odio,
-          sapiente asperiores. Dolorum, maiores possimus? Voluptate in quas
-          laudantium aut minus earum?
-        </p>
-        <div class="skills">
-          <section class="skills__coding">
-            <h3 class="skills__title">Coding Skills</h3>
-            <ul>
-              <li class="bar">
-                <div class="bar__metadata"><span>HTML</span><span>98%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 98%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>Javascript</span><span>90%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 90%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>TypeScript</span><span>40%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 40%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>React</span><span>79%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 79%"></div></div>
-              </li>
-              <li class="bar">
-                <div class="bar__metadata"><span>HTML</span><span>68%</span></div>
-                <div class="bar__bg"><div class="bar__value" style="width: 68%"></div></div>
-              </li>
-            </ul>
-          </section>
-          <section class="skills__tools">
-            <h3 class="skills__title">Tools</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>IntelliJ</li>
-              <li>Android Studio Code</li>
-              <li>Bracket</li>
-              <li>Sketch app</li>
-            </ul>
-          </section>
-          <section class="skills__etc">
-            <h3 class="skills__title">Etc</h3>
-            <ul>
-              <li>Git</li>
-              <li>Math</li>
-            </ul>
-          </section>
-        </div>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            expedita eligendi dolores quam quis reprehenderit, ex modi. Odio,
+            sapiente asperiores. Dolorum, maiores possimus? Voluptate in quas
+            laudantium aut minus earum?
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Javascript</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>TypeScript</span><span>40%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 40%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>79%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 79%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>68%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 68%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Android Studio Code</li>
+                <li>Bracket</li>
+                <li>Sketch app</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- Work -->
@@ -171,90 +209,122 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">All <span class="category__count">8</span></button>
+              <button class="category category--selected">
+                All <span class="category__count">8</span>
+              </button>
             </li>
             <li>
-              <button class="category">Front-end <span class="category__count">3</span></button>
+              <button class="category">
+                Front-end <span class="category__count">3</span>
+              </button>
             </li>
             <li>
-              <button class="category">Back-end <span class="category__count">3</span></button>
+              <button class="category">
+                Back-end <span class="category__count">3</span>
+              </button>
             </li>
             <li>
-              <button class="category">Mobile <span class="category__count">2</span></button>
+              <button class="category">
+                Mobile <span class="category__count">2</span>
+              </button>
             </li>
           </ul>
           <ul class="projects">
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project1.webp" alt="project1" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project1.webp"
+                alt="project1"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #1</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project2.webp" alt="project2" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #2</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project2.webp"
+                alt="project2"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #2</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project3.webp" alt="project3" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #3</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project3.webp"
+                alt="project3"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #3</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project4.webp" alt="project4" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #4</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project4.webp"
+                alt="project4"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #4</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project5.webp" alt="project5" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #5</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project5.webp"
+                alt="project5"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #5</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project6.webp" alt="project6" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #6</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project6.webp"
+                alt="project6"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #6</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project7.webp" alt="project7" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #7</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project7.webp"
+                alt="project7"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #7</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
             <li class="project">
-              <a href="# target="_blank">
-                <img src="images/projects/project8.webp" alt="project8" class="project__img">
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #8</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div>
-              </a>
+              <a href="# target="_blank" />
+              <img
+                src="images/projects/project8.webp"
+                alt="project8"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #8</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -265,46 +335,96 @@
         <p class="description">See what they say about me</p>
         <ul class="testimonials">
           <li class="testimonial">
-            <img src="images/testimonials/people1.webp" alt="people1" class="testimonial__img">
+            <img
+              src="images/testimonials/people1.webp"
+              alt="people1"
+              class="testimonial__img"
+            />
             <div class="testimonial__bubble">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis beatae ducimus! Impedit fuga illum magni molestiae a. Neque impedit aperiam ipsa nemo tenetur aut fugiat quod perspiciatis minus sunt!</p>
-              <p><a href="#" class="testimonial__bubble__name">James Kim</a>  /Google</p> 
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo facilis beatae ducimus! Impedit fuga illum magni
+                molestiae a. Neque impedit aperiam ipsa nemo tenetur aut fugiat
+                quod perspiciatis minus sunt!
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">James Kim</a>
+                /Google
+              </p>
             </div>
           </li>
           <li class="testimonial">
-            <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img">
+            <img
+              src="images/testimonials/people2.webp"
+              alt="people2"
+              class="testimonial__img"
+            />
             <div class="testimonial__bubble">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt cupiditate esse, eos eum vero quibusdam! Quibusdam repellendus magnam, aperiam qui dolore minus sint nihil expedita ad officiis tenetur vitae!</p>
-              <p><a href="#" class="testimonial__bubble__name">Michael Hoffman</a>  /Samsung</p> 
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                deserunt cupiditate esse, eos eum vero quibusdam! Quibusdam
+                repellendus magnam, aperiam qui dolore minus sint nihil expedita
+                ad officiis tenetur vitae!
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name"
+                  >Michael Hoffman</a
+                >
+                /Samsung
+              </p>
             </div>
           </li>
           <li class="testimonial">
-            <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img">
+            <img
+              src="images/testimonials/people3.webp"
+              alt="people3"
+              class="testimonial__img"
+            />
             <div class="testimonial__bubble">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maxime laudantium voluptatem, fugit porro sed aut sint sequi aperiam. Atque quasi officiis quos culpa iure laudantium sunt nam accusantium autem!</p>
-              <p><a href="#" class="testimonial__bubble__name">Anna Jin</a>  /Google</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit maxime laudantium voluptatem, fugit porro sed aut sint
+                sequi aperiam. Atque quasi officiis quos culpa iure laudantium
+                sunt nam accusantium autem!
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+                /Google
+              </p>
             </div>
           </li>
         </ul>
       </section>
       <!-- Arrow up -->
-      <aside>        
-        <a class="arrow-up" href="#home" title='back to top'><i class="fa-solid fa-arrow-up"></i></a>
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top"
+          ><i class="fa-solid fa-arrow-up"></i
+        ></a>
       </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
       <div class="max-container">
-          <h2 class="title">Let&#39;s talk</h2>
+        <h2 class="title">Let&#39;s talk</h2>
         <p class="description">dkabw923@gmail.com</p>
         <ul class="contact__links">
           <li>
-            <a class="contact__link" href="https://github.com/yoon052" target="_blank" title="my github link">
+            <a
+              class="contact__link"
+              href="https://github.com/yoon052"
+              target="_blank"
+              title="my github link"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
-            <a class="contact__link" href="https://github.com/yoon052" target="_blank" title="my linkedin link">
+            <a
+              class="contact__link"
+              href="https://github.com/yoon052"
+              target="_blank"
+              title="my linkedin link"
+            >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>

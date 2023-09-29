@@ -61,6 +61,11 @@ button:focus {
   text-align: center;
 }
 
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
+}
+
 .title {
   font-size: 2.5rem;
   margin: 1rem 0;
@@ -71,14 +76,9 @@ button:focus {
   margin: 0.5rem 0;
 }
 
-.max-container {
-  max-width: var(--size-max-width);
-  margin: auto;
-}
-
 /* Header */
 .header {
-  background-color: transparent;
+  background-color: #050a13;
   position: fixed;
   top: 0;
   width: 100%;
@@ -87,12 +87,6 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  transition: all 300ms ease;
-}
-
-.header--dark {
-  background-color: var(--color-primary);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header__logo {
@@ -154,7 +148,7 @@ button:focus {
   color: var(--color-accent);
 }
 
-.home_description {
+.home__description {
   font-size: 1.3rem;
 }
 
@@ -237,7 +231,6 @@ button:focus {
 .skills {
   display: grid;
   grid-template-columns: 6fr 4fr;
-  font-size: 1.2rem;
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
@@ -250,6 +243,7 @@ button:focus {
 .skills__title {
   color: var(--color-accent);
   margin: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .skills__coding {
@@ -365,7 +359,7 @@ button:focus {
   height: 100%;
   background-color: var(--color-black);
   opacity: 0;
-  display: felx;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -437,7 +431,6 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
-  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
@@ -475,10 +468,6 @@ button:focus {
     font-size: 1rem;
   }
 
-  .description {
-    font-size: 1rem;
-  }
-
   .header {
     flex-direction: column;
     align-items: start;
@@ -510,7 +499,7 @@ button:focus {
   }
 
   .major {
-    width: 25rem;
+    max-width: 25rem;
   }
 
   .job {

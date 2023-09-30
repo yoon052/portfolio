@@ -172,7 +172,7 @@ button:focus {
   bottom: 0;
   left: 0;
   width: calc(100% + 1.3px);
-  height: 61px;
+  height: 60px;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -191,9 +191,10 @@ button:focus {
 .home__avatar {
   background: var(--home-avatar-svg);
   position: relative;
+  left: -50px;
   bottom: -70px;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   transform: scaleX(-1) rotate(-5deg);
 }
@@ -592,6 +593,17 @@ button:focus {
 
   #home {
     padding-bottom: 3rem;
+  }
+
+  .home__avatar {
+    background: var(--home-avatar-svg);
+    position: relative;
+    left: 25px;
+    bottom: 40px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transform: scaleX(-1) rotate(-5deg);
   }
 
   .home__title {
